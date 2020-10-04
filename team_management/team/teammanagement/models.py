@@ -55,7 +55,7 @@ class User(AbstractUser):
     first_name = models.CharField(max_length=254)
     last_name = models.CharField(max_length=254)
     phone_regex = RegexValidator(regex=r'^[6-9]\d{9}$', message="Phone number is not valid")
-    phone_number = models.CharField(validators=[phone_regex], max_length=10, blank=False, unique=True)
+    phone_number = models.CharField(validators=[phone_regex], max_length=10, blank=True, unique=True)
     email = models.EmailField(_('email address'),blank=True)
     role = models.PositiveSmallIntegerField(choices=MEMBER_CHOICES, default = '2', null=True)
 
