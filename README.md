@@ -139,6 +139,17 @@ APIs -
     }
 }
 ```
+- POST - http://127.0.0.1:8010/api/user_delete/6/ (to delete a team member). 
+```sh
+response
+{
+    "is_success": true,
+    "message": [
+        "Member Deleted!"
+    ],
+    "response_data": null
+}
+```
 
 # Steps to run the application:-
 - clone the project - ```git clone https://github.com/Raj160907/instawork.git```<br/>
