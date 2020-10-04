@@ -6,43 +6,25 @@ APIs -
 - POST -  http://127.0.0.1:8010/api/user/ (to create a team member).  
 ```sh
 - request
-          {   
-                "first_name": "Rashmi",
-                "last_name": "Chauhan",
-                "phone_number": "7326628771",
-                "email": "rashmichauhan2002@gmail.com",
-                "role": 2
-           }
+  {   
+     "first_name": "Satish",
+    "last_name": "Shekhar",
+    "phone_number": "9148450822",
+    "email": "shekhar@gmail.com",
+    "role": 2
+  }
  - response
-           {
+{
     "is_success": true,
     "message": null,
-    "response_data": [
-        {
-            "id": 1,
-            "first_name": "Rashmi",
-            "last_name": "Chauhan",
-            "phone_number": "7326628770",
-            "email": "rashmichauhan2002@gmail.com",
-            "role": "Admin"
-        },
-        {
-            "id": 2,
-            "first_name": "",
-            "last_name": "",
-            "phone_number": "7607846774",
-            "email": "",
-            "role": "Admin"
-        },
-        {
-            "id": 10,
-            "first_name": "Rashmi",
-            "last_name": "Chauhan",
-            "phone_number": "7326628771",
-            "email": "rashmichauhan2002@gmail.com",
-            "role": "Regular"
-        }
-    ]
+    "response_data": {
+        "id": 11,
+        "first_name": "Satish",
+        "last_name": "Shekhar",
+        "phone_number": "9148450822",
+        "email": "shekhar@gmail.com",
+        "role": "Regular"
+    }
 }
 ```
 - PUT -  http://127.0.0.1:8010/api/user/ (to update a team member). 
